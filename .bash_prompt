@@ -1,4 +1,11 @@
 #!/bin/bash
+
+### LS Colors
+# setup directory colors
+export CLICOLOR=1
+export LSCOLORS='Bxgxfxfxcxdxdxhbadbxbx'
+
+
 ### Prompt Colors
 # Modified version of @gf3’s Sexy Bash Prompt
 # (https://github.com/gf3/dotfiles)

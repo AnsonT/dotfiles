@@ -1,0 +1,23 @@
+brew tap caskroom/cask
+brew tap caskroom/font
+
+brew install bash-completion
+brew install bat
+brew install exa
+brew install knqyf263/pet/pet
+brew install git-lfs
+brew install git-secret
+brew install nvm
+brew install pyenv
+brew install pyenv-virtualenv
+brew install python3
+brew install jenv
+
+
+brew cask install iterm2
+brew cask install alfred
+brew cask install cakebrew
+brew cask install visual-studio-code
+brew cask install spectacle
+
+brew cask install font-hack

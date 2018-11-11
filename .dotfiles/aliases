@@ -3,15 +3,23 @@ function list_newest() {
   echo "$_v"
 }
 
+# Test for running under Parallels
+if system_profiler SPHardwareDataType | grep --quiet Parallels
+  then
+    alias code='function __code() { code $* --disable-gpu; unset -f __code; }; __code'
+fi
+
 
 alias config='/usr/bin/git --git-dir=/Users/ansont/.cfg/ --work-tree=/Users/ansont'
 alias cat="bat -p"
 alias ls="exa"
 alias lst=list_newest
+alias ..='cd ../'                           # Go back 1 directory level
+alias ...='cd ../../'                       # Go back 2 directory levels
+alias .3='cd ../../../'                     # Go back 3 directory levels
+alias .4='cd ../../../../'                  # Go back 4 directory levels
+alias .5='cd ../../../../../'               # Go back 5 directory levels
+alias .6='cd ../../../../../../'            # Go back 6 directory levels
+mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
 
 
-# Test for running under Parallels
-if system_profiler SPHardwareDataType | grep --quiet Parallels
-    then
-        alias code='function __code() { code $* --disable-gpu; unset -f __code; }; __code'
-fi
