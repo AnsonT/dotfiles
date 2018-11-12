@@ -12,6 +12,7 @@ brew install pyenv
 brew install pyenv-virtualenv
 brew install python3
 brew install jenv
+brew install the_silver_searcher
 
 
 brew cask install iterm2
@@ -19,5 +20,6 @@ brew cask install alfred
 brew cask install cakebrew
 brew cask install visual-studio-code
 brew cask install spectacle
+brew cask install insomnia
 
 brew cask install font-hack
