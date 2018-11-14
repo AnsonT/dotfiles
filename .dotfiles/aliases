@@ -1,12 +1,24 @@
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     machine=Linux;;
+    Darwin*)    machine=Mac;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+esac
+
 function list_newest() {
   _v=$(script -q /dev/null exa -l | head -20)
   echo "$_v"
 }
 
-# Test for running under Parallels
-if system_profiler SPHardwareDataType | grep --quiet Parallels
+if [ $machine = 'Mac' ]
   then
-    alias code='function __code() { code $* --disable-gpu; unset -f __code; }; __code'
+    # Test for running under Parallels
+    if system_profiler SPHardwareDataType | grep --quiet Parallels
+      then
+        alias code='function __code() { code $* --disable-gpu; unset -f __code; }; __code'
+    fi
 fi
 
 

@@ -1,6 +1,7 @@
 #!/bin/bash
 export PATH="/usr/local/bin:$PATH"
 export PATH="$PATH:$HOME/.bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 
 [ -r ~/.dotfiles/exports ] && . ~/.dotfiles/exports
 [ -r ~/.dotfiles/aliases ] && . ~/.dotfiles/aliases
