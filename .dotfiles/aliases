@@ -21,7 +21,7 @@ if [ $machine = 'Mac' ]
     fi
 fi
 
-alias config='/usr/bin/git --git-dir=/Users/ansont/.cfg/ --work-tree=/Users/ansont'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias cat="bat -p"
 alias ls="exa"
 alias lst=list_newest
