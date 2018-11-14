@@ -99,7 +99,7 @@ function parse_git_dirty() {
 symbol="⚡ "
 
 #export PS1="\n\[${MAGENTA}\]\u \[$RESET\]in \[$GREEN\]\w\[$RESET\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$RESET\]\n$GREEN\T\[$RESET\] $symbol\[$RESET\]"
-export PS1="\n\[${MAGENTA}\]\u \[$RESET\]in \[$GREEN\]\w\[$RESET\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$RESET\]\n\[$GREEN\]\T\[$RESET\] $symbol\[$RESET\]"
+export PS1="\n\[${MAGENTA}\]\u\[${PURPLE}\]@\h \[$RESET\]in \[$GREEN\]\w\[$RESET\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$RESET\]\n\[$GREEN\]\T\[$RESET\] $symbol\[$RESET\]"
 export PS2="\[$ORANGE\]→ \[$RESET\]$"
 
 
