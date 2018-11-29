@@ -5,3 +5,7 @@ dpkg -i bat_0.9.0_amd64.deb
 
 curl -sSf https://static.rust-lang.org/rustup.sh | sh
 cargo install exa
+
+
+# install unbuffer
+sudo apt-get install expect-dev
