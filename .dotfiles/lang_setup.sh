@@ -6,6 +6,11 @@ asdf install nodejs 10.14.1
 asdf install nodejs 8.14.0
 asdf global nodejs 11.3.0
 
+
+# brew install python appears to fix python 3 build (2018/12/02)
+brew install python
+brew uninstall python
+
 asdf plugin-add python
 asdf install python 3.7.1
 asdf install python 2.7.15
