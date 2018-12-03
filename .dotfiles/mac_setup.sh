@@ -9,3 +9,4 @@ sudo apachectl stop >/dev/null
 sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
 
 ./lang_setup.sh
+./common_setup.sh
