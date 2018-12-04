@@ -10,9 +10,9 @@ git config --global user.email "$email"
 go get github.com/jsha/minica
 asdf reshim golang
 
-mcd ~/.ca
-minica -ca-cert "localhost-ca.pem" -ca-key "localhost-ca-key.pem"
-minica --domains test.localhost
+mkdir ~/.ca
+cd ~/.ca
+minica -ca-cert "localhost-ca.pem" -ca-key "localhost-ca-key.pem" --domains "test.localhost"
 
 mkdir ~/.ssh
 chmod 0700 ~/.ssh
