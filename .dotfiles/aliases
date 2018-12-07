@@ -35,3 +35,5 @@ mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and ju
 
 alias f='ag'      # find text
 alias ff='ag -g'  # find file
+
+alias typora='open -a typora'

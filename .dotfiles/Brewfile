@@ -1,10 +1,14 @@
 
-# Taps
+# Minimal Set ---------------------------------
+
+## Taps
 tap "caskroom/cask"
 tap "caskroom/fonts"
+
+## Taps
 tap "drakew/corgi"
 
-# Binaries
+## Binaries
 brew "bash-completion"
 brew "bat"
 brew "exa"
@@ -14,8 +18,32 @@ brew "ssh-copy-id"
 brew "git-lfs"
 brew "git-secret"
 brew "the_silver_searcher"
+brew "httpie"
+
+## Apps
+cask "iterm2"
+cask "alfred"
+cask "font-hack"
+cask "spectacle"
+
+# Basic Applications ---------------------------------
+cask "cheatsheet"
+cask "cakebrew"
+cask "slack"
+cask "authy"
+cask "spotify"
+cask "kitmatic"
+cask "dynalist"
+cask "appcleaner"
+cask "google-chrome"
+cask "cryptomator"
+cask "keybase"
+
+# Development ---------------------------------
+
+## Binaries
 brew "asdf"
-brew "hyper"
+brew "hyper"      # hyper.sh cli tools
 # brew "coreutils"
 # brew "gpg"
 # brew "automake"
@@ -27,22 +55,16 @@ brew "hyper"
 # brew "libtool"
 # brew "unixodbc"
 
-# Apps
-cask "iterm2"
-cask "alfred"
-cask "cakebrew"
+## Apps
 cask "visual-studio-code"
-cask "spectacle"
 cask "insomnia"
-cask "spectacle"
-cask "font-hack"
 cask "vagrant"
-cask "appcleaner"
-cask "cheatsheet"
-cask "google-chrome"
-cask "slack"
-cask "authy"
-cask "cryptomator"
+
 cask "dotnet-sdk"
 cask "fastlane"
-cask "spotify"
+cask "imageoptim" # Optimize  images
+cask "sourcetree"
+cask "tower"      # git tower
+cask "gas-mask"   # Edit host files
+cask "dash"
+cask "kitmatic"
