@@ -43,7 +43,8 @@ cask "keybase"
 
 ## Binaries
 brew "asdf"
-brew "hyper"      # hyper.sh cli tools
+brew "mkcert"
+brew "minica"
 # brew "coreutils"
 # brew "gpg"
 # brew "automake"
@@ -68,3 +69,8 @@ cask "tower"      # git tower
 cask "gas-mask"   # Edit host files
 cask "dash"
 cask "kitmatic"
+
+cask "qlcolorcode"
+cask "qlmarkdown"
+cask "quicklook-json"
+cask "qlstephen"
