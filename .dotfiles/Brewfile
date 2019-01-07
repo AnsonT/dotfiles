@@ -43,6 +43,7 @@ cask "keybase"
 
 ## Binaries
 brew "asdf"
+brew "nss" # needed by mkcert to configure Firefox
 brew "mkcert"
 brew "minica"
 # brew "coreutils"
