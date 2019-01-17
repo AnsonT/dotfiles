@@ -32,7 +32,6 @@ cask "cakebrew"
 cask "slack"
 cask "authy"
 cask "spotify"
-cask "kitmatic"
 cask "dynalist"
 cask "appcleaner"
 cask "google-chrome"
@@ -69,7 +68,6 @@ cask "sourcetree"
 cask "tower"      # git tower
 cask "gas-mask"   # Edit host files
 cask "dash"
-cask "kitmatic"
 
 cask "qlcolorcode"
 cask "qlmarkdown"
