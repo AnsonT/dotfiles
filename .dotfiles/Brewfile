@@ -32,7 +32,6 @@ cask "cakebrew"
 cask "slack"
 cask "authy"
 cask "spotify"
-cask "kitmatic"
 cask "dynalist"
 cask "appcleaner"
 cask "google-chrome"
@@ -56,22 +55,25 @@ brew "minica"
 # brew "libxslt"
 # brew "libtool"
 # brew "unixodbc"
+cask "qlcolorcode"
+cask "qlmarkdown"
+cask "quicklook-json"
+cask "qlstephen"
 
 ## Apps
 cask "visual-studio-code"
 cask "insomnia"
 cask "vagrant"
 
-cask "dotnet-sdk"
-cask "fastlane"
 cask "imageoptim" # Optimize  images
 cask "sourcetree"
-cask "tower"      # git tower
+# cask "tower"      # git tower
 cask "gas-mask"   # Edit host files
 cask "dash"
-cask "kitmatic"
 
-cask "qlcolorcode"
-cask "qlmarkdown"
-cask "quicklook-json"
-cask "qlstephen"
+cask "docker"
+cask "minikube"
+cask "kitematic"
+cask "dotnet-sdk"
+cask "fastlane"
+
