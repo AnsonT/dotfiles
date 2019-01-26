@@ -8,7 +8,7 @@ case "${unameOut}" in
 esac
 
 function list_newest() {
-  _v=$(unbuffer exa -l | head -20)
+  _v=$(unbuffer exa -l -s modified -r | head -20)
   echo "$_v"
 }
 
