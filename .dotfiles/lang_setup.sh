@@ -12,10 +12,10 @@ source /usr/local/opt/asdf/asdf.sh
 asdf plugin-add nodejs
 bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 echo "Installing NodeJS"
-asdf install nodejs 11.3.0
-asdf install nodejs 10.14.1
-asdf install nodejs 8.14.0
-asdf global nodejs 11.3.0
+asdf install nodejs 11.9.0
+asdf install nodejs 10.15.1
+asdf install nodejs 8.15.0
+asdf global nodejs 11.9.0
 
 brew install yarn --without-node
 
@@ -30,12 +30,16 @@ if [ $machine = 'Mac' ]
 fi
 
 asdf plugin-add python
-asdf install python 3.7.1
+asdf install python 3.7.2
 asdf install python 2.7.15
-asdf global python 3.7.1 2.7.15
+asdf global python 3.7.2 2.7.15
 
 echo "Installing GoLang"
 asdf plugin-add golang
 asdf install golang 1.11
 asdf global golang 1.11
 
+echo "Installing Java"
+asdf plugin-add java
+asdf install java openjdk-11.0.1
+asdf global java openjdk-11.0.1
