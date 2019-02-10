@@ -1,9 +1,32 @@
-#  export NVM_DIR="$HOME/.nvm"
-# . "/usr/local/opt/nvm/nvm.sh"
+
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     machine=Linux;;
+    Darwin*)    machine=Mac;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+esac
 
 
-  export LDFLAGS="-L/usr/local/opt/openssl/lib"
-  export CPPFLAGS="-I/usr/local/opt/openssl/include"
+#export LDFLAGS="-L/usr/local/opt/openssl/lib"
+#export CPPFLAGS="-I/usr/local/opt/openssl/include"
 
-  export PATH=$PATH:$GOPATH/bin
-  export PATH="$HOME/.fastlane/bin:$PATH"
+export PATH=$PATH:$GOPATH/bin
+export PATH="/usr/local/sbin:$PATH"
+
+#export LDFLAGS="-L/usr/local/opt/readline/lib"
+#export CPPFLAGS="-I/usr/local/opt/readline/include"
+
+LD_LIBRARY_PATH="$LD_LIBRARY_PATH:usr/local/opt/openssl/lib:/usr/local/opt/readline/lib"
+CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:/usr/local/opt/openssl/include:/usr/local/opt/readline/include"
+
+if [ $machine = 'Mac' ]
+  then
+    export PATH="$HOME/.fastlane/bin:$PATH"
+fi
+
+if [ $machine = 'Linux' ]
+  then
+    export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+fi
