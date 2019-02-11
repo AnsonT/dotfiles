@@ -12,6 +12,12 @@ function list_newest() {
   echo "$_v"
 }
 
+function find_dir() {
+  echo "$1"
+  echo "$2"
+  find $1 -type d -name $2 -prune
+}
+
 if [ $machine = 'Mac' ]
   then
     # Test for running under Parallels
@@ -35,5 +41,6 @@ mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and ju
 
 alias f='ag'      # find text
 alias ff='ag -g'  # find file
+alias fd=find_dir # find directory: fd {start_dir} {name_pattern}
 
 alias typora='open -a typora'
