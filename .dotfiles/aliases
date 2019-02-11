@@ -13,8 +13,6 @@ function list_newest() {
 }
 
 function find_dir() {
-  echo "$1"
-  echo "$2"
   find $1 -type d -name $2 -prune
 }
 
