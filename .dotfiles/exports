@@ -12,6 +12,7 @@ esac
 #export LDFLAGS="-L/usr/local/opt/openssl/lib"
 #export CPPFLAGS="-I/usr/local/opt/openssl/include"
 
+export GOPATH=$HOME/src/go
 export PATH=$PATH:$GOPATH/bin
 export PATH="/usr/local/sbin:$PATH"
 

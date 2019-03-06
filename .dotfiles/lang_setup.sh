@@ -36,8 +36,8 @@ asdf global python 3.7.2 2.7.15
 
 echo "Installing GoLang"
 asdf plugin-add golang
-asdf install golang 1.11
-asdf global golang 1.11
+asdf install golang 1.12
+asdf global golang 1.12
 
 echo "Installing Java"
 asdf plugin-add java
