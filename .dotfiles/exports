@@ -8,7 +8,7 @@ case "${unameOut}" in
     *)          machine="UNKNOWN:${unameOut}"
 esac
 
-
+export VISUAL=vim
 #export LDFLAGS="-L/usr/local/opt/openssl/lib"
 #export CPPFLAGS="-I/usr/local/opt/openssl/include"
 
