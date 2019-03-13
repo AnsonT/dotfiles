@@ -1,4 +1,14 @@
 #!/bin/bash
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     machine=Linux;;
+    Darwin*)    machine=Mac;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+esac
+
+
 export PATH="/usr/local/bin:$PATH"
 export PATH="$PATH:$HOME/.bin"
 export PATH="$PATH:$HOME/.cargo/bin"
@@ -9,3 +19,12 @@ export PATH="$PATH:$HOME/.cargo/bin"
 [ -r ~/.bin/z.sh ] && . ~/.bin/z.sh
 [ -r /usr/local/opt/asdf/asdf.sh ] && source /usr/local/opt/asdf/asdf.sh
 [ -c ~/.local_exports ] && . ~/.local_exports
+if [ $machine = 'Linux' ]
+  then
+    [[ -r "/home/linuxbrew/.linuxbrew/etc/profile.d/bash_completion.sh" ]] && . "/home/linuxbrew/.linuxbrew/etc/profile.d/bash_completion.sh"
+fi
+
+if [ $machine = 'Mac' ]
+  then
+    [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+fi

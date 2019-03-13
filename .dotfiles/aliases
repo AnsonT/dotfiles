@@ -8,8 +8,16 @@ case "${unameOut}" in
 esac
 
 function list_newest() {
-  _v=$(unbuffer exa -l | head -20)
+  _v=$(unbuffer exa -l -s modified -r | head -20)
   echo "$_v"
+}
+
+function find_dir() {
+  find $1 -type d -name $2 -prune
+}
+
+function find_dir_sizes() {
+  fd $1 $2 | while read line; do du -sh $line; done
 }
 
 if [ $machine = 'Mac' ]
@@ -35,5 +43,7 @@ mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and ju
 
 alias f='ag'      # find text
 alias ff='ag -g'  # find file
+alias fd=find_dir # find directory: fd {start_dir} {name_pattern}
+alias fds=find_dir_sizes # find directory sizes: fds {start_dir} {name_pattern}
 
 alias typora='open -a typora'

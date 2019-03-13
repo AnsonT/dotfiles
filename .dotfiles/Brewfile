@@ -19,6 +19,8 @@ brew "git-lfs"
 brew "git-secret"
 brew "the_silver_searcher"
 brew "httpie"
+brew "wget"
+brew "mosh"
 
 ## Apps
 cask "iterm2"
