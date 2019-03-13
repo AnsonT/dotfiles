@@ -18,7 +18,7 @@ export PATH="$PATH:$HOME/.cargo/bin"
 [ -r ~/.bash_prompt ] && . ~/.bash_prompt
 [ -r ~/.bin/z.sh ] && . ~/.bin/z.sh
 [ -r /usr/local/opt/asdf/asdf.sh ] && source /usr/local/opt/asdf/asdf.sh
-[ -c ~/.local_exports ] && . ~/.local_exports
+[ -r ~/.local_exports ] && . ~/.local_exports
 if [ $machine = 'Linux' ]
   then
     [[ -r "/home/linuxbrew/.linuxbrew/etc/profile.d/bash_completion.sh" ]] && . "/home/linuxbrew/.linuxbrew/etc/profile.d/bash_completion.sh"
