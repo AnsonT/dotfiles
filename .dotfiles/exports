@@ -16,6 +16,9 @@ export GOPATH=$HOME/src/go
 export PATH=$PATH:$GOPATH/bin
 export PATH="/usr/local/sbin:$PATH"
 
+export HISTCONTROL=ignorespace:ignoredups
+export HISTIGNORE="ls:ps:history"
+
 #export LDFLAGS="-L/usr/local/opt/readline/lib"
 #export CPPFLAGS="-I/usr/local/opt/readline/include"
 
