@@ -96,10 +96,10 @@ function parse_git_dirty() {
 
 # Change this symbol to something sweet.
 # (http://en.wikipedia.org/wiki/Unicode_symbols)
-symbol="⚡ "
+symbol="⚡"
+symbol2=" > "
 
-#export PS1="\n\[${MAGENTA}\]\u \[$RESET\]in \[$GREEN\]\w\[$RESET\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$RESET\]\n$GREEN\T\[$RESET\] $symbol\[$RESET\]"
-export PS1="\n\[${MAGENTA}\]\u\[${PURPLE}\]@\h \[$RESET\]in \[$GREEN\]\w\[$RESET\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$RESET\]\n\[$GREEN\]\T\[$RESET\] $symbol\[$RESET\]"
+export PS1="\n\[$MAGENTA\]\u\[$PURPLE\]@\h \[$RESET\]in \[$GREEN\]\w\[$RESET\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$RESET\]\n\[$GREEN\]\T\[$RESET\] : \[$RESET\]"
 export PS2="\[$ORANGE\]→ \[$RESET\]$"
 
 
