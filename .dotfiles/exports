@@ -34,3 +34,6 @@ if [ $machine = 'Linux' ]
   then
     export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 fi
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
