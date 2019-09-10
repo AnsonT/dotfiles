@@ -21,6 +21,7 @@ brew "the_silver_searcher"
 brew "httpie"
 brew "wget"
 brew "mosh"
+brew "micro"
 
 ## Apps
 cask "iterm2"
@@ -82,3 +83,12 @@ cask "kitematic"
 cask "dotnet-sdk"
 cask "fastlane"
 
+# Kubernetes CLI To Manage Your Clusters, https://github.com/derailed/k9s
+tap "derailed/k9s"
+brew "k9s"
+
+# kubectx + kubens, https://github.com/ahmetb/kubectx
+brew "kubectx"
+
+# Multi pod and container log tailing for Kubernetes
+brew "stern"
