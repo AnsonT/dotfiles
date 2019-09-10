@@ -47,6 +47,9 @@ brew "asdf"
 brew "nss" # needed by mkcert to configure Firefox
 brew "mkcert"
 brew "minica"
+
+# sshpass 1.06
+brew "https://gist.githubusercontent.com/AnsonT/282d04ccfb70681f3851146e1e41a629/raw/184a30b25bf4e307b827991bbc7b6cca06f573ec/sshpass.rb"
 # brew "coreutils"
 # brew "gpg"
 # brew "automake"
