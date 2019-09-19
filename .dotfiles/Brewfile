@@ -73,15 +73,20 @@ cask "vagrant"
 
 cask "imageoptim" # Optimize  images
 cask "sourcetree"
-# cask "tower"      # git tower
 cask "gas-mask"   # Edit host files
 cask "dash"
+
+cask "gitkraken"
 
 cask "docker"
 cask "minikube"
 cask "kitematic"
 cask "dotnet-sdk"
 cask "fastlane"
+
+# Interactive CLI to manage docker containers
+tap moncho/dry
+install dry
 
 # Kubernetes CLI To Manage Your Clusters, https://github.com/derailed/k9s
 tap "derailed/k9s"
