@@ -84,9 +84,7 @@ cask "kitematic"
 cask "dotnet-sdk"
 cask "fastlane"
 
-# Interactive CLI to manage docker containers
-tap moncho/dry
-install dry
+brew "lazydocker"
 
 # Kubernetes CLI To Manage Your Clusters, https://github.com/derailed/k9s
 tap "derailed/k9s"
