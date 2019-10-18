@@ -2,8 +2,8 @@
 # Minimal Set ---------------------------------
 
 ## Taps
-tap "caskroom/cask"
-tap "caskroom/fonts"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 
 ## Taps
 tap "drakew/corgi"
