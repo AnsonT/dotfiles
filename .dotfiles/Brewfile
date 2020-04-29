@@ -2,8 +2,7 @@
 # Minimal Set ---------------------------------
 
 ## Taps
-tap "caskroom/cask"
-tap "caskroom/fonts"
+tap "homebrew/cask-fonts"
 
 ## Taps
 tap "drakew/corgi"
@@ -79,7 +78,8 @@ cask "dash"
 cask "gitkraken"
 
 cask "docker"
-cask "minikube"
+brew "kubernetes-cli"
+brew "minikube"
 cask "kitematic"
 cask "dotnet-sdk"
 cask "fastlane"
