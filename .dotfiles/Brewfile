@@ -2,10 +2,7 @@
 # Minimal Set ---------------------------------
 
 ## Taps
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-
-## Taps
 tap "drakew/corgi"
 
 ## Binaries
@@ -22,6 +19,7 @@ brew "httpie"
 brew "wget"
 brew "mosh"
 brew "micro"
+brew "broot"
 
 ## Apps
 cask "iterm2"
@@ -44,6 +42,7 @@ cask "keybase"
 # Development ---------------------------------
 
 ## Binaries
+brew "jenv"
 brew "asdf"
 brew "nss" # needed by mkcert to configure Firefox
 brew "mkcert"
@@ -79,7 +78,8 @@ cask "dash"
 cask "gitkraken"
 
 cask "docker"
-cask "minikube"
+brew "kubernetes-cli"
+brew "minikube"
 cask "kitematic"
 cask "dotnet-sdk"
 cask "fastlane"
@@ -95,3 +95,9 @@ brew "kubectx"
 
 # Multi pod and container log tailing for Kubernetes
 brew "stern"
+
+# Kubectl command line prompts
+brew "c-bata/kube-prompt/kube-prompt"
+
+# Terminal UI for Kubectl
+brew "derailed/k9s/k9s"
