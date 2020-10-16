@@ -28,3 +28,4 @@ if [ $machine = 'Mac' ]
   then
     [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 fi
+source /Users/ansont/.config/broot/launcher/bash/br
