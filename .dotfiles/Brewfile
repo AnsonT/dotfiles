@@ -3,8 +3,6 @@
 
 ## Taps
 tap "homebrew/cask-fonts"
-
-## Taps
 tap "drakew/corgi"
 
 ## Binaries
@@ -22,6 +20,7 @@ brew "wget"
 brew "mosh"
 brew "micro"
 brew "jq"
+brew "broot"
 
 ## Apps
 cask "iterm2"

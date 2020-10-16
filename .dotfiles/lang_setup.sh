@@ -12,10 +12,11 @@ source /usr/local/opt/asdf/asdf.sh
 asdf plugin-add nodejs
 bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 echo "Installing NodeJS"
-asdf install nodejs 13.13.0
-asdf install nodejs 10.20.1
+asdf install nodejs 10.22.0
 asdf install nodejs 8.17.0
-asdf global nodejs 13.13.0
+asdf install nodejs 12.16.1
+asdf install nodejs 14.7.0
+asdf global nodejs 12.16.1
 
 curl -o- -L https://yarnpkg.com/install.sh | bash
 
