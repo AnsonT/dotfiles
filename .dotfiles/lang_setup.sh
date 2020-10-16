@@ -17,7 +17,7 @@ asdf install nodejs 10.20.1
 asdf install nodejs 8.17.0
 asdf global nodejs 13.13.0
 
-brew install yarn --without-node
+curl -o- -L https://yarnpkg.com/install.sh | bash
 
 echo "Installing Python"
 # brew install pyenv appears to fix python 3 build (2018/12/02)

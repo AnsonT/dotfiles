@@ -21,6 +21,7 @@ brew "httpie"
 brew "wget"
 brew "mosh"
 brew "micro"
+brew "jq"
 
 ## Apps
 cask "iterm2"
@@ -39,6 +40,7 @@ cask "appcleaner"
 cask "google-chrome"
 cask "cryptomator"
 cask "keybase"
+cask "typora"
 
 # Development ---------------------------------
 
