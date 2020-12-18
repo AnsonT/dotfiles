@@ -4,7 +4,8 @@
 ## Taps
 tap "homebrew/cask-fonts"
 tap "drakew/corgi"
-
+tap "alexellis/homebrew-alexellis
+"
 ## Binaries
 brew "bash-completion"
 brew "bat"
@@ -21,6 +22,7 @@ brew "mosh"
 brew "micro"
 brew "jq"
 brew "broot"
+brew "nnn"
 
 ## Apps
 cask "iterm2"
@@ -87,6 +89,7 @@ cask "dotnet-sdk"
 cask "fastlane"
 
 brew "lazydocker"
+brew "dive"
 
 # Kubernetes CLI To Manage Your Clusters, https://github.com/derailed/k9s
 tap "derailed/k9s"
