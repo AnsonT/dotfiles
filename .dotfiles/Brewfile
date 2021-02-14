@@ -104,5 +104,8 @@ brew "stern"
 # Kubectl command line prompts
 brew "c-bata/kube-prompt/kube-prompt"
 
+# Kubernetes prompt
+brew "kube-ps1"
+
 # Terminal UI for Kubectl
 brew "derailed/k9s/k9s"
