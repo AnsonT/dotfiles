@@ -23,6 +23,7 @@ brew "micro"
 brew "jq"
 brew "broot"
 brew "nnn"
+brew "bluetoothconnector"
 
 ## Apps
 cask "iterm2"
@@ -75,7 +76,7 @@ cask "insomnia"
 cask "vagrant"
 
 cask "imageoptim" # Optimize  images
-cask "sourcetree"
+# cask "sourcetree"
 cask "gas-mask"   # Edit host files
 cask "dash"
 
@@ -84,9 +85,9 @@ cask "gitkraken"
 cask "docker"
 brew "kubernetes-cli"
 brew "minikube"
-cask "kitematic"
+# cask "kitematic"
 cask "dotnet-sdk"
-cask "fastlane"
+# cask "fastlane"
 
 brew "lazydocker"
 brew "dive"
