@@ -24,11 +24,13 @@ brew "jq"
 brew "broot"
 brew "nnn"
 brew "bluetoothconnector"
+brew "starship"
 
 ## Apps
 cask "iterm2"
 cask "alfred"
-cask "font-hack"
+#cask "font-hack"
+cask "font-hack-nerd-font"
 cask "spectacle"
 
 # Basic Applications ---------------------------------
