@@ -29,4 +29,5 @@ if [ $machine = 'Mac' ]
     [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 fi
 #source /Users/ansont/.config/broot/launcher/bash/br
-source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+#source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+eval "$(starship init bash)"

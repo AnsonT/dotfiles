@@ -42,3 +42,5 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export OPENFAAS_URL=https://openfaas.ansont.net
 
 export GPG_TTY=$(tty)
+
+export STARSHIP_CONFIG=~/.dotfiles/starship.toml
