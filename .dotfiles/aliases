@@ -48,7 +48,6 @@ alias fds=find_dir_sizes # find directory sizes: fds {start_dir} {name_pattern}
 
 alias typora='open -a typora'
 alias kraken='open -na GitKraken --args -p "$(git rev-parse --show-toplevel)"'
-alias br='broot'
 
 alias kubesh='kubectl run my-shell --rm -i --tty --image ubuntu -- bash'
 alias docker_clean_images='docker rmi $(docker images -a|grep "<none>"|awk '"'"'$1=="<none>" {print $3}'"'"')'

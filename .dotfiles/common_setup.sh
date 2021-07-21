@@ -5,7 +5,7 @@ read email
 
 git config --global user.name "$name"
 git config --global user.email "$email"
-
+git config --global pull.rebase false
 
 go get github.com/jsha/minica
 asdf reshim golang
@@ -17,3 +17,5 @@ minica -ca-cert "localhost-ca.pem" -ca-key "localhost-ca-key.pem" --domains "tes
 mkdir ~/.ssh
 chmod 0700 ~/.ssh
 ssh-keygen -t rsa -b 4096 -C "$name $(hostname) <$email>"
+
+broot --install
