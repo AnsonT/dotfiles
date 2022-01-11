@@ -28,6 +28,7 @@ CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:/usr/local/opt/openssl/include:/usr/loca
 if [ $machine = 'Mac' ]
   then
     export PATH="$HOME/.fastlane/bin:$PATH"
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 if [ $machine = 'Linux' ]

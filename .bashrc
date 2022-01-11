@@ -31,6 +31,6 @@ fi
 #source /Users/ansont/.config/broot/launcher/bash/br
 #source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 eval "$(starship init bash)"
-source /Users/ansont/.config/broot/launcher/bash/br
+source ${HOME}/.config/broot/launcher/bash/br
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

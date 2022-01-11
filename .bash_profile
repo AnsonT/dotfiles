@@ -5,5 +5,6 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 
-source /Users/ansont/.config/broot/launcher/bash/br
-source /usr/local/opt/asdf/libexec/asdf.sh
+source ${HOME}/.config/broot/launcher/bash/br
+source /opt/homebrew/opt/asdf/libexec/asdf.sh
+source ~/.asdf/plugins/java/set-java-home.bash
