@@ -3,27 +3,27 @@
 
 ## Taps
 tap "homebrew/cask-fonts"
-tap "drakew/corgi"
-tap "alexellis/homebrew-alexellis
+#tap "drakew/corgi"
+#tap "alexellis/homebrew-alexellis
 "
 ## Binaries
 brew "bash-completion"
 brew "bat"
 brew "exa"
-brew "expect"
-brew "corgi"
+# brew "expect"
+# brew "corgi"
 brew "ssh-copy-id"
-brew "git-lfs"
-brew "git-secret"
+# brew "git-lfs"
+# brew "git-secret"
 brew "the_silver_searcher"
 brew "httpie"
 brew "wget"
-brew "mosh"
-brew "micro"
+# brew "mosh"
+# brew "micro"
 brew "jq"
 brew "broot"
-brew "nnn"
-brew "bluetoothconnector"
+# brew "nnn"
+# brew "bluetoothconnector"
 brew "starship"
 
 ## Apps
@@ -31,10 +31,10 @@ cask "iterm2"
 cask "alfred"
 #cask "font-hack"
 cask "font-hack-nerd-font"
-cask "spectacle"
+cask "rectangle"
 
 # Basic Applications ---------------------------------
-cask "cheatsheet"
+# cask "cheatsheet"
 cask "cakebrew"
 cask "slack"
 cask "authy"
@@ -43,7 +43,7 @@ cask "dynalist"
 cask "appcleaner"
 cask "google-chrome"
 cask "cryptomator"
-cask "keybase"
+# cask "keybase"
 cask "typora"
 
 # Development ---------------------------------
@@ -51,12 +51,12 @@ cask "typora"
 ## Binaries
 brew "jenv"
 brew "asdf"
-brew "nss" # needed by mkcert to configure Firefox
-brew "mkcert"
-brew "minica"
+# brew "nss" # needed by mkcert to configure Firefox
+# brew "mkcert"
+# brew "minica"
 
 # sshpass 1.06
-brew "https://gist.githubusercontent.com/AnsonT/282d04ccfb70681f3851146e1e41a629/raw/184a30b25bf4e307b827991bbc7b6cca06f573ec/sshpass.rb"
+# brew "https://gist.githubusercontent.com/AnsonT/282d04ccfb70681f3851146e1e41a629/raw/184a30b25bf4e307b827991bbc7b6cca06f573ec/sshpass.rb"
 # brew "coreutils"
 # brew "gpg"
 # brew "automake"
@@ -67,20 +67,21 @@ brew "https://gist.githubusercontent.com/AnsonT/282d04ccfb70681f3851146e1e41a629
 # brew "libxslt"
 # brew "libtool"
 # brew "unixodbc"
-cask "qlcolorcode"
-cask "qlmarkdown"
-cask "quicklook-json"
-cask "qlstephen"
+# cask "qlcolorcode"
+# cask "qlmarkdown"
+# cask "quicklook-json"
+# cask "qlstephen"
+cask "syntax-highlight"
 
 ## Apps
 cask "visual-studio-code"
 cask "insomnia"
-cask "vagrant"
+# cask "vagrant"
 
 cask "imageoptim" # Optimize  images
 # cask "sourcetree"
 cask "gas-mask"   # Edit host files
-cask "dash"
+# cask "dash"
 
 cask "gitkraken"
 
@@ -91,12 +92,8 @@ brew "minikube"
 cask "dotnet-sdk"
 # cask "fastlane"
 
-brew "lazydocker"
-brew "dive"
-
-# Kubernetes CLI To Manage Your Clusters, https://github.com/derailed/k9s
-tap "derailed/k9s"
-brew "k9s"
+# brew "lazydocker"
+# brew "dive"
 
 # kubectx + kubens, https://github.com/ahmetb/kubectx
 brew "kubectx"
