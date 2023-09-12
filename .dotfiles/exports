@@ -25,6 +25,11 @@ export HISTIGNORE="ls:ps:history"
 LD_LIBRARY_PATH="$LD_LIBRARY_PATH:usr/local/opt/openssl/lib:/usr/local/opt/readline/lib"
 CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:/usr/local/opt/openssl/include:/usr/local/opt/readline/include"
 
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+
 if [ $machine = 'Mac' ]
   then
     export PATH="$HOME/.fastlane/bin:$PATH"
@@ -44,4 +49,8 @@ export OPENFAAS_URL=https://openfaas.ansont.net
 
 export GPG_TTY=$(tty)
 
-export STARSHIP_CONFIG=~/.dotfiles/starship.toml
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+  export STARSHIP_CONFIG=~/.dotfiles/starship.toml
+else
+  export STARSHIP_CONFIG=~/.dotfiles/starship_warp.toml
+fi

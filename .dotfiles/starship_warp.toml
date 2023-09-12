@@ -1,0 +1,56 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+command_timeout = 3000
+format = """
+$time\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$kubernetes\
+$nodejs\
+$python\
+$conda\
+$shell\
+$character"""
+continuation_prompt = "▶▶"
+
+[nodejs]
+disabled=false
+
+[python]
+disabled=false
+
+[time]
+disabled=false
+format = '[\[ $time \]]($style) '
+
+[kubernetes]
+disabled = false
+format = '[$symbol$context( \($namespace\))]($style) '
+
+[kubernetes.context_aliases]
+"loft-vcluster_dev-cluster_vcluster-dev-cluster_loft-cluster" = "loft-vcluster"
+"loft-vcluster_test_vcluster-test_loft-cluster" = "loft-test-vcluster"
+
+[hostname]
+ssh_only = true
+format =  "[$hostname](bold red) "
+trim_at = ".local"
+disabled = false
+
+[username]
+style_user = "white bold"
+style_root = "black bold"
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
+[directory]
+disabled = false
+format = "[  $path ](fg:bright-white bg:22)[$read_only]($read_only_style) "
+style = "bold green"
+truncate_to_repo = true
+truncation_symbol = '/'

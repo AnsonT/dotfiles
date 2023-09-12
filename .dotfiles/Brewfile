@@ -45,7 +45,7 @@ cask "google-chrome"
 cask "cryptomator"
 # cask "keybase"
 cask "typora"
-
+cask "gas-mask"
 # Development ---------------------------------
 
 ## Binaries
